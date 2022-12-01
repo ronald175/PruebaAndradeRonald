@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+<p>Informacion de Personas</p>
+
+<table>
+    <tr>
+        <th>Codigo</th>
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Cargas Familiares</th>
+    </tr>
+    <tr *ngFor="let p of persons | async">
+        <td>{{p.codigo}}</td>
+        <td>{{p.cedula}}</td>
+        <td>{{p.nombre}}</td>
+        <td>{{p.fnacimiento}}</td>
+        <td>{{p.cfamiliares}}</td>
+        <td><button (click)="eliminarPersons(p)">Eliminar</button></td>
+    </tr>
+</table>

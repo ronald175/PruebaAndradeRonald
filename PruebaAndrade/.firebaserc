@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "evaluacionandrade": {
+      "hosting": {
+        "PruebaAndrade": [
+          "evaluacionandrade"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "evaluacionandrade"
+  }
+}
